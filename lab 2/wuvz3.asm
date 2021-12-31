@@ -7,7 +7,7 @@ CMAIN:
     lea esi, [array]        ;Loading adress of the first element
     lea edx, [esi]          ;Storing initial index
     lea edi, [arrayLen+esi] ;Loading array's length l
-Iteration:                  ;for i = 1 to l-1
+Iteration:                  ;for i = 0 to l-1
     cmp edi, esi
     je End                  ;if i = l: jump to End
     mov al, [esi]           ;key = array[i]
